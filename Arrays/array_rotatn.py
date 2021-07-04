@@ -6,7 +6,7 @@ def gcd(a,b):
         return a
     else:
         return gcd(b,a%b)
-
+#sol1
 def arrayRotation(arr,d):
     n=len(arr)
     
@@ -34,4 +34,12 @@ def arrayRotation(arr,d):
 A=[0,1,2,3,4,5,6,7]
 arrayRotation(A,3)
 print(A)
+#sol2
+def rotateArr(A,b):
+    res=[]
+    n=len(A)
+    for x in range(n):
+        res.push(A[(i+(b%n))%n])
+    return res
+    
 
