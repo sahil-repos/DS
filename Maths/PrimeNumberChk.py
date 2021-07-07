@@ -19,5 +19,5 @@ def prime(n):
         i=i+6
     return True
 
-print(prime(48))
+print(prime(47))
     
