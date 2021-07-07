@@ -13,7 +13,7 @@ def exac3(n):
             #mark all multiples of i  0
             
             for k in range(2*i,n+1,i):
-                if k*k>50:
+                if k*k>50: #optimization
                     break
                 isPrime[k]=0
         i+=1
