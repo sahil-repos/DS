@@ -62,6 +62,9 @@ q.put(11)
 q.put(21)
 q.put(32)
 
+#peeking top element
+print(q.queue[-1])
+
 
 
 while not q.empty():  #true is q is empty
@@ -73,7 +76,6 @@ while not q.empty():  #true is q is empty
 nQ=Q.LifoQueue(maxsize=2)  #fixes the max size of stack insertion beyond this => error
 nQ.put(11)
 nQ.put(123)
-print(nQ.full())
 nQ.put(1234)   #error
 print(nQ.qsize())
 
