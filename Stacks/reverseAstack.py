@@ -16,3 +16,5 @@ ans=revStack(ip)
 print(ans.queue)
 
 
+
+
