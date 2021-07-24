@@ -10,4 +10,9 @@ def replaceChar(st,oldC,newC):
     else:
         return st[0]+smallOP
 
-print(replaceChar("RANGER",'E','Y'))
+print(replaceChar("RANGER",'R','B'))
+
+#inbuilt method string.replace(old,new)
+print("qwttywwiop".replace('w','+'))
+
+
