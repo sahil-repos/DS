@@ -81,4 +81,36 @@ h=takeInput()
 printLL(h)
 delNode(h,3)
 printLL(h)
+
+
+#insert @ ith pos
+
+def insertAt(head,i,newData):
+    counter=0
+    while(head is not None):
+        if counter==i-1:
+            newNode=Node(newData)
+            newNode.next=head.next
+            head.next=newNode
+            print("Insertion Completed")
+            break
+        counter+=1
+        head=head.next
+
+def insertRecursively(head,i,newData):
+    if i<0:
+        return head
+    if i==0:
+        newNode=Node(newData)
+        newNode.next=head
+        return newNode
+    if head is None:
+        return None
+    smallHead=insertRecursively(head.next,i-1,data)
+    head.next=smallHead
+    return head
+
+printLL(h)            
+insertAt(h,3,44)
+printLL(h)
         
