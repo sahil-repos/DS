@@ -31,3 +31,5 @@ class Solution:
         nextNode.next=pre.next
         pre.next=nextNode
       return dummy.next
+
+#O(1) space   O(N) time
