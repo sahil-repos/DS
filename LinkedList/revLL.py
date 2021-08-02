@@ -16,7 +16,8 @@ class Solution:
             curr=nextNode
         return 
     
-    
+   #recursive
+
    def recRev(self,curr,prev):
     if curr is None:
         return prev
