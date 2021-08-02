@@ -14,4 +14,12 @@ class Solution:
             curr.next=prev
             prev=curr
             curr=nextNode
+        return 
+    
+    
+   def recRev(self,curr,prev):
+    if curr is None:
         return prev
+    nextNode=curr.next
+    curr.next=prev
+    return self.recRev(nextNode,curr)
