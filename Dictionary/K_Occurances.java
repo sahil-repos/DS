@@ -22,6 +22,6 @@ public class Solution {
         //if not B frequency occurred tree, then return -1    
         res=foundTwig==0?-1:res;
     
-        return res;
+        return res%100000007;
     }
 }
