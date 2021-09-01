@@ -15,4 +15,25 @@ class Solution {
         }
      return ans;   
     }
+    
+    
+    
+    ///another approach for inner code single iteration 
+//           HashMap<Integer,Integer> hm= new HashMap<>();
+//         ArrayList<Integer> ans= new ArrayList<Integer>();
+
+//         for(int i=0;i<A.size();i++){
+//             int elem= A.get(i);
+//             if(hm.containsKey(B-elem)){
+//                 ans.add(hm.get(B-elem)+1);
+//                 ans.add(i+1);
+//                 break;
+//             }
+//             else if(!hm.containsKey(elem)){
+//                 hm.put(elem,i);
+//             }
+//         }
+//         return ans;
+    
+    
 }
