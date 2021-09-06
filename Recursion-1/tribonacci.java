@@ -6,6 +6,9 @@ class Solution {
         else if(n==2){
             return 1;
         }
+        //for recursion use call below but its not optimal so I will use DP anyways
+        //    return tribonacci(n-1)+tribonacci(n-2)+tribonacci(n-3);
+//dp sol
         int[] dp= new int[n+1];
         dp[0]=0;
         dp[1]=1;
