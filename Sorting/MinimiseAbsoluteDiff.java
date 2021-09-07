@@ -73,6 +73,59 @@ public class Solution {
                 
             }
             
+        
+       
+      
+      ///////////////////////////////////////////////////////////////////////////////////////////
+        /////////////////////ANother approach without SOrting using hashmap//////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////
+      //hashing way
+        
+        //get max min in linear time 
+        
+        //then fill hash with frequeencies of elems
+      HashMap<Integer,Integer> hm= new HashMap<>();
+      for(int c: A){
+          if(hm.containsKey(c)){
+              hm.put(c,hm.get(c)+1);
+          }
+          else{
+              hm.put(c,1);
+          }
+      }
+      while(true)
+      {
+          if(B==0|| max== min ){
+             return max- min;
+             
+          }
+          
+          if(hm.get(max)>hm.get(min)){
+              
+              //min pakdo
+              int possibleAddition=B/hm.get(min);
+              if(possibleAddition==0){
+                  break;
+              }
+              B=B-hm.get(min);
+              hm.put(min+1,hm.getOrDefault(min+1,0)+hm.get(min));
+              min++;
+          }
+          else{
+               //max pakdo
+              int possibleAddition=B/hm.get(max);
+              if(possibleAddition==0){
+                  break;
+              }
+              B=B-hm.get(max);
+              hm.put(max-1,hm.getOrDefault(max-1,0)+hm.get(max));
+              max--;
+          }
+          
+          
+       }
+        
+        
         return max-min;
         
     }
