@@ -40,4 +40,16 @@ public class Solution {
        
         
     }
+    
+    
+//another direct formula approach    
+//     public int solve2(int N){
+//     if(N==0 ||N==1) return N;
+//     int x=log2(N);
+    
+//     ans=0;
+//     ans+= (pow(2,x) /2   ) *x
+//         ans+=  N-pow(2,x)+1
+//         ans+=solve2(N-pow(2,x))
+//         return ans;}
 }
